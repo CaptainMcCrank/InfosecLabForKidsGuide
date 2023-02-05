@@ -32,42 +32,43 @@ You can explore the file system on a mac by opening an app called the "**Finder*
 ## The MacOS Dock
 
 There is a display element called the "**Dock**" at the bottom of the Mac's desktop:
-![alt text](dock.png "Dock")
+
+![alt text](imgs/dockSmall.png "Dock")
 
 ## The MacOS Finder
 
 On a Mac, the Finder is in the dock by default and has an icon that looks like this:
 
-![alt text](imgs/finder_dock.png "Finder_Dock")
+![alt text](imgs/finder_dockSmall.png "Finder_Dock")
 
 Double click on the Finder icon to launch the finder.  The default finder view hides some valuable information.  In it's initial presentation, it likely shows "recent files" like this:
 
-![alt text](imgs/finder_default_view.png "Finder Default View")
+![alt text](imgs/finder_default_viewSmall.png "Finder Default View")
 
 The default view of the finder prevents you from seeing the file system structure clearly.  I will make some changes to the finder settings which will make it easier to see the filesystem.  For starters, let's change the view from Icons to List.  The menu where you can change the view is located here:
 
 ### Changing the finder view to list mode and unhiding the hard drive.
-![alt text](imgs/finder_default_view_settings.png "Finder Settings")
+![alt text](imgs/finder_default_view_settingsSmall.png "Finder Settings")
 If your window is compressed, the view menu looks like this:
-![alt text](imgs/compressed.png "Finder compressed view")
+![alt text](imgs/compressedSmall.png "Finder compressed view")
 
 We need to change the view to List view by clicking on this icon:
-![alt text](imgs/finder_change_to_list_view.png "Finder compressed view")
+![alt text](imgs/finder_change_to_list_viewSmall.png "Finder compressed view")
 
 The List view presents slightly differently if your finder is compressed:
-![alt text](imgs/compressed_list.png "Compressed List")
+![alt text](imgs/compressed_listSmall.png "Compressed List")
 
 Next, we need to unhide the hard drive via the finder settings.  You can open the finder settings by clicking finder at the top of the menu bar, and then selecting settings:
-![alt text](imgs/finder_settings.png "Finder settings")
+![alt text](imgs/finder_settingsSmall.png "Finder settings")
 
 The settings menu will open.  Across the top, it lists "General", "Tags", "Sidebar" and "Advanced".  Click on Sidebar, and the menu will look like this:
-![alt text](imgs/finder_settings_sidebar.png "Finder settings Sidebar")
+![alt text](imgs/finder_settings_sidebarSmall.png "Finder settings Sidebar")
 
 In the locations setion, make sure that "Hard Disks" is changed to have a blue checkmark.  Close the menu.  When you look at the finder, you'll now see a location labeled "MacOS" (the name may be different if you customized it during mac setup)
-![alt text](imgs/locations.png "Finder settings Sidebar")
+![alt text](imgs/locationsSmall.png "Finder settings Sidebar")
 
 When you click on MacOS, you'll see something similar to this screenshot, which shows you a view of the / directory of the **File System**:
-![alt text](imgs/macos.png "MacOS View")
+![alt text](imgs/macosSmall.png "MacOS View")
 
 
 # What is a File System?
@@ -77,7 +78,7 @@ On Linux computers and MacOS, there is a directory called / and it pronounced "r
 
 The MacOS view in the finder represents the / folder of the system.  If you open the drive, you should see something like the following:
 
-![alt text](imgs/macos.png "MacOS View")
+![alt text](imgs/macosSmall.png "MacOS View")
 
 This view of the root filesystem is incomplete, however.  As you experieced earlier when we changed the finder settings to show the hard disk, there are  default settings of the Finder which hide aspects of the system.  Graphic User Interfaces designed to keep beginners from accidentally damaging the system in it's default state.  As a result, they're not always the best tool for experts to use.  When we're doing security work, we're going to spend a lot of time using a Command Interpeter.
 
@@ -91,15 +92,15 @@ Spotlight can help you quickly find apps, documents, emails, and other items on 
 
 On your Mac, if you press the "Command" and "Space" keys simultaneously, Spotlight Search will show in the middle of your screen.  
 
-![alt text](imgs/SpotlightSearch.png "MacOS Spotlight search")
+![alt text](imgs/SpotlightSearchSmall.png "MacOS Spotlight search")
 
 You can type "terminal" to launch Mac's Command Interpreter.
 
-![alt text](imgs/SpotlightSearchTerminal.png "MacOS Spotlight launching the Terminal")
+![alt text](imgs/SpotlightSearchTerminalSmall.png "MacOS Spotlight launching the Terminal")
 
 The default view of the terminal is something similar to this:
 
-![alt text](imgs/TerminalDefault.png "Terminal Default")
+![alt text](imgs/TerminalDefaultSmall.png "Terminal Default")
 
 On the left side of the terminal, you'll see the username of the account you're logged into, then an @ sign and finally the hostname of your mac.  In my case, I'm logged into an account called "Test" and the computer I'm logged into is a macbook air with the hostname of Patricks-Air-5.  There's then a "~" (pronounced Til-duh), and then a percentage sign.  The ~ is a signal that tells you you're in your account's home directory, and the % is a signal that the command interpreter you are running is something called zsh (or Z Shell).  There are many different command interpreters you could run, each with subtle differences optimized for different kinds of use cases.  ZSH has some autocomplete and navigation advantages which make it preferred by some advanced users.  
 
@@ -111,7 +112,7 @@ Try typing your first command in the terminal:
 
  Note that the command is case sensitive- you have to type it in all lower case.
 
-![alt text](imgs/TerminalPWD.png "Terminal Default")
+![alt text](imgs/TerminalPWDSmall.png "Terminal Default")
 
 The output was ```/Users/test```.  That probably feels anticlimactic.  What does this command do?  What does /Users/test even mean?  We have to figure it out.  Luckily, there's a hand tool called "man" which will give us a manual for a tool if it's been installed on the system.  Let's type 
 
@@ -119,7 +120,7 @@ The output was ```/Users/test```.  That probably feels anticlimactic.  What does
 
 to see what PWD does.
 
-![alt text](imgs/TerminalManPWD.png "Terminal Default")
+![alt text](imgs/TerminalManPWDSmall.png "Terminal Default")
 
 In the description, we see that the PWD utility writes the absolute pathname of the current working directory to the standard output.  If you hit the space bar, the man page skips down a full page.  You can hit the up and down arrows to move through the file one line at a time.  You can it the "b" key to go back and the "q" key to quit out of the man application.
  
@@ -131,40 +132,40 @@ Let's try a new command called "ls" :
 
 ```ls```
 
-![alt text](imgs/TerminalLS.png "Terminal Default")
+![alt text](imgs/TerminalLSSmall.png "Terminal Default")
 
 It reported back 8 things.  Let's see what the ls command does with the man tool:
 
-![alt text](imgs/TerminalMANLS.png "Terminal Default")
+![alt text](imgs/TerminalMANLSSmall.png "Terminal Default")
 
 According to the man page, ls lists the contents of a directory.  Notice at the bottom of the page, there is a ```:```.  If you hit the forwardslash key ```/```, you can then type a case sensitive search term.  Let's search for the term ```EXAMPLES```
 
-![alt text](imgs/TerminalManSearchEXAMPLES.png "Terminal Man LS search exmaple")
+![alt text](imgs/TerminalManSearchEXAMPLESSmall.png "Terminal Man LS search exmaple")
 
 Hit ```return```
 
-![alt text](imgs/searchHighlight.png "Search higlighting exmaple")
+![alt text](imgs/searchHighlightSmall.png "Search higlighting exmaple")
 
 The man page will jump to any sections that match the text.  As you can see, the all uppercase word "EXAMPLES" is highlighted at the top of the page.  If there is more than one instance of the word "EXAMPLES, you can hit the ```n``` key and man will jump through the document to the next instance.  If there are no further instances, the semicolon at the bottom of the page will report Pattern not found.
 
-![alt text](imgs/patternnotfound.png "Pattern not found")  
+![alt text](imgs/patternnotfoundSmall.png "Pattern not found")  
 
 
 The Examples section of man pages is very helpful.  It will often show additional "command line options" which will produce more informative results.  The man example suggests ```ls -lioF```.   Let's run this command and see it's output:
 
-![alt text](imgs/lsliof.png "ls -liof")  
+![alt text](imgs/lsliofSmall.png "ls -liof")  
 
 The second column of results gives us some intersting information.  The first thing to note is the 'd' at the beginning of the column.  This tells you that the object that's listed in that row is a Directory.  You can also infer this from the forward slash ```/``` at the end of each entry.  
 
 The ls command has many command line options.  Let's try adding a few extra letters to the command: ```ls -alhioF```
 
-![alt text](imgs/ls_alhioF.png "ls -liof")  
+![alt text](imgs/ls_alhioFSmall.png "ls -liof")  
 
 You'll see the output is different.  You'll also notice that there are now new entries which start with a "."!  In Unix and Linux systems, you can hide filesystem objects from the standard response by prepending them with a ".".  In the command we used, we included the command line option of -a, which tells ls to include entires that start with a "." in the response.
 
 In addition, some of the files don't have the / at the end of the name.  For those instances, if you look at the second column, you'll see that those entries also don't have the "d" value.  This means that these are files rather than directories.  We now have a better way to explore the file system.  The alhioF command line arguments are a lot to remember- so I try to use the simpler ```ls -alh``` command.  
 
-![alt text](imgs/lsalh.png "ls -alh")  
+![alt text](imgs/lsalhSmall.png "ls -alh")  
 
 - -a returns files hidden with a . at the beginning of the name
 - -l returns "The Long Format" of the entries for each file (try searching the man page of LS for "The Long Format" to learn more)
@@ -175,17 +176,17 @@ Let's circle back to the root directory we explored using the Finder.  We will u
 
 ```cd /```
 
-![alt text](imgs/cdroot.png "ls -alh")  
+![alt text](imgs/cdrootSmall.png "ls -alh")  
 
 Notice that the command line changed. The ```~``` was replaced with a ```/``` after the command ran.  We asked the interpreter to change to the / directory.  You can change into a directory by typing ```cd``` and then providing a full path to a location.  
 
 Let's now run an ls -alh command from the / directory:
 
-![alt text](imgs/rootlsalh.png "ls -alh")
+![alt text](imgs/rootlsalhSmall.png "ls -alh")
 
 Do you remember what directory we were in when you ran the pwd command?  Let's add that to the cd command and run ls again:
 
-![alt text](imgs/comparerootandtest.png "ls -alh")
+![alt text](imgs/comparerootandtestSmall.png "ls -alh")
 
 As you can see, the output of ls changes to reflect whatever directory you are in.  You can use the cd command to change directories.  Let's get ourselves back to the / directory with ```cd /``` and compare what root looks like in Finder versus the terminal.
 
@@ -194,7 +195,7 @@ The root directory has more files than we saw in the finder.  Let's compare:
 
 ls -alh root             |  Finder root
 :-------------------------:|:-------------------------:
-![alt text](imgs/rootlsalhmarkup.png "ls -alh")   |  ![alt text](imgs/macos.png "ls -alh") 
+![alt text](imgs/rootlsalhmarkupSmall.png "ls -alh")   |  ![alt text](imgs/macosSmall.png "ls -alh") 
  
 
 As you can see- the ls output includes Applications, Library, System and Users.  But there are many more files.  You don't see the same set of files in the finder.  This should demonstrate why it is valuable to learn how to work with the command line.  As we work more with the machine, we will explore many commands.  You can find a helpful cheat sheet of macos terminal commands [here](https://github.com/0nn0/terminal-mac-cheatsheet). 
